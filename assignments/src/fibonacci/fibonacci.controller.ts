@@ -1,6 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 
-@Controller('fibonacci')
+@Controller('assignments/fibonacci')
 export class FibonacciController {
 
     @Get(':number')
