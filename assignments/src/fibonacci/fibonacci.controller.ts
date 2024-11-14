@@ -9,11 +9,11 @@ export class FibonacciController {
         let num1 = 0;
         let num2 = 1;
 
-        const sequence = [num1];
+        let sequence = [];
 
-        for (let i = 2; i <= num; i++) {
+        for (let i = 1; i <= num; i++) {
+            sequence.push(num1);
             const next = num1 + num2;
-            sequence.push(next);
             num1 = num2;
             num2 = next;
         }
